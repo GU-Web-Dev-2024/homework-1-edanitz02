@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ethan Danitz: 332 Web Dev</title>
+
+    <style>
+        h1 {
+          color: hwb(120 0% 50%);
+          padding: 5px;
+        }
+        p {
+          margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id = "page-heading">This is a submission for hw1</h1>
+    <p>In this course, I hope to be able to gain the knowledge of using <em>html</em>, <em>css</em>, <strong>java</strong>, and be able to put together a website
+        for my <strong>friends/family</strong> if they need it. Also, I will hope to gain critical <strong>knowledge</strong> of the skills web developers
+        use when making websites.
+    </p>
+    <p>
+        <img src="webdevmeme.png" alt="funny meme">
+        If you liked that meme and want to see more, select 
+        <a href="https://www.flux-academy.com/blog/25-web-design-memes-only-designers-will-understand">here</a>
+    </p>
+    <p>
+        <button id="white-btn">White</button>
+        <button id="blue-btn">Blue</button>
+    </p>
+    <script>
+        let whiteBtn = document.getElementById("white-btn");
+        whiteBtn.addEventListener("click", function() {
+           changeBackgroundColor("white");
+        });
+
+        let blueBtn = document.getElementById("blue-btn");
+        blueBtn.addEventListener("click", function() {
+            changeBackgroundColor("blue");
+        });
+
+        function changeBackgroundColor(newColor) {
+            let heading = document.getElementById("page-heading");
+            heading.style.color = newColor;
+         }
+    </script>
+
+</body>
+</html>
